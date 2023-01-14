@@ -1,0 +1,409 @@
+:root {
+    --body-color: #F5F5F5;
+    --progress-ba-color: #cde1f8;
+    --text-color: #4e4e4e;
+    --hover-color: #CDE1F8;
+}
+body {
+    background-color: var(--body-color);
+}
+/* start header  */
+.nav-item a::after {
+content: '';
+width: 0;
+height: 2.1px;
+position: absolute;
+left: 0;
+bottom: 0;
+background-color: var(--bs-primary);
+transition: 0.3s;
+}
+.nav-item .act-nav:after {
+    width: 30px;
+}
+.nav-item a:hover:after {
+    width: 30px;
+}
+
+.landing {
+    background-image: url(../images/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    font-size: 4.5rem;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.text-move {
+    height: 30px;
+}
+.text-move::after {
+    content: '.';
+    animation: run 20s infinite alternate;
+    text-align: center;
+}
+@keyframes run {
+    0.605%{content: 'C|'}
+    1.21%{content: 'CE'}
+    1.815%{content: 'CEO|'}
+    2.42%{content: 'CEO '}
+    3.025%{content: 'CEO D|'}
+    3.63%{content: 'CEO De'}
+    4.235%{content: 'CEO Dev|'}
+    4.84%{content: 'CEO DevF|'}
+    5.445%{content: 'CEO DevFo'}
+    6.05%{content: 'CEO DevFoli|'}
+    6.655%{content: 'CEO DevFolio'}
+    7.26%{content: 'CEO DevFolio|'}
+    7.865%{content: 'CEO DevFolio'}
+    8.47%{content: 'CEO DevFolio|'}
+    9.057%{content: 'CEO DevFolio'}
+    9.68%{content: 'CEO DevFolio|'}
+    10.285%{content: 'CEO DevFoli'}
+    10.89%{content: 'CEO DevFol|'}
+    11.495%{content: 'CEO DevFo'}
+    12.1%{content: 'CEO DevF|'}
+    12.705%{content: 'CEO Dev'}
+    13.31%{content: 'CEO De|'}
+    13.915%{content: 'CEO D'}
+    14.52%{content: 'CEO |'}
+    15.125%{content: 'CEO'}
+    15.73%{content: 'CE|'}
+    16.335%{content: 'C'}
+    16.49%{content: '|'}
+    17.545%{content: 'W'}
+    18.15%{content: 'We|'}
+    18.755%{content: 'Web'}
+    19.36%{content: 'Web |'}
+    19.965%{content: 'Web D|'}
+    20.57%{content: 'Web De'}
+    21.175%{content: 'Web Dev|'}
+    21.78%{content: 'Web Deve'}
+    22.385%{content: 'Web Devel|'}
+    22.99%{content: 'Web Develo'}
+    23.595%{content: 'Web Develop|'}
+    24.2%{content: 'Web Develope'}
+    24.805%{content: 'Web Developer|'}
+    25.41%{content: 'Web Developer'}
+    26.015%{content: 'Web Developer|'}
+    26.62%{content: 'Web Developer'}
+    27.225%{content: 'Web Developer|'}
+    27.83%{content: 'Web Developer'}
+    28.435%{content: 'Web Develope|'}
+    29.04%{content: 'Web Develop'}
+    29.645%{content: 'Web Develo|'}
+    30.25%{content: 'Web Devel'}
+    30.855%{content: 'Web Deve|'}
+    31.46%{content: 'Web Dev'}
+    32.065%{content: 'Web De|'}
+    36.67%{content: 'Web D'}
+    33.275%{content: 'Web |'}
+    33.88%{content: 'Web'}
+    34.485%{content: 'We|'}
+    35.09%{content: 'W'}
+    35.695%{content: '|'}
+    36.3%{content: 'W'}
+    36.905%{content: 'We|'}
+    37.51%{content: 'Web'}
+    38.115%{content: 'Web |'}
+    38.72%{content: 'Web D'}
+    39.325%{content: 'Web De|'}
+    39.93%{content: 'Web Des'}
+    40.535%{content: 'Web Desi|'}
+    41.14%{content: 'Web Desig'}
+    41.745%{content: 'Web Design|'}
+    42.35%{content: 'Web Designe'}
+    42.955%{content: 'Web Designer|'}
+    43.56%{content: 'Web Designer'}
+    44.165%{content: 'Web Designer|'}
+    44.77%{content: 'Web Designer'}
+    45.345%{content: 'Web Designer|'}
+    45.98%{content: 'Web Designer'}
+    46.585%{content: 'Web Designe|'}
+    47.19%{content: 'Web Design'}
+    47.795%{content: 'Web Desig|'}
+    48.4%{content: 'Web Desi'}
+    49.005%{content: 'Web Des|'}
+    49.61%{content: 'Web De'}
+    50.215%{content: 'Web D|'}
+    50.82%{content: 'Web '}
+    51.425%{content: 'Web|'}
+    52.03%{content: 'We'}
+    52.635%{content: 'W|'}
+    53.24%{content: ''}
+    53.845%{content: 'F|'}
+    54.45%{content: 'Fr'}
+    55.055%{content: 'Fro|'}
+    55.66%{content: 'Fron'}
+    56.265%{content: 'Front|'}
+    56.87%{content: 'Fronte'}
+    57.475%{content: 'Fronten|'}
+    58.08%{content: 'Frontend'}
+    58.685%{content: 'Frontend |'}
+    59.29%{content: 'Frontend D'}
+    59.895%{content: 'Frontend De|'}
+    60.5%{content: 'Frontend Dev'}
+    61.105%{content: 'Frontend Deve|'}
+    61.71%{content: 'Frontend Devel'}
+    62.315%{content: 'Frontend Develo|'}
+    62.92%{content: 'Frontend Develop'}
+    63.525%{content: 'Frontend Develope|'}
+    64.13%{content: 'Frontend Developer'}
+    64.735%{content: 'Frontend Developer|'}
+    65.34%{content: 'Frontend Developer'}
+    65.495%{content: 'Frontend Developer|'}
+    66.55%{content: 'Frontend Developer'}
+    67.155%{content: 'Frontend Developer|'}
+    67.76%{content: 'Frontend Develope'}
+    68.365%{content: 'Frontend Develop|'}
+    68.97%{content: 'Frontend Develo'}
+    69.575%{content: 'Frontend Devel|'}
+    70.18%{content: 'Frontend Deve'}
+    70.785%{content: 'Frontend Dev|'}
+    71.39%{content: 'Frontend De'}
+    71.995%{content: 'Frontend D|'}
+    72.6%{content: 'Frontend '}
+    73.205%{content: 'Frontend|'}
+    73.81%{content: 'Fronten'}
+    74.415%{content: 'Fronte|'}
+    75.02%{content: 'Front'}
+    75.625%{content: 'Fron|'}
+    76.23%{content: 'Fro'}
+    76.835%{content: 'Fr|'}
+    77.44%{content: 'F'}
+    78.045%{content: '|'}
+    78.65%{content: 'G'}
+    79.255%{content: 'Gr|'}
+    79.86%{content: 'Gra'}
+    80.465%{content: 'Grap|'}
+    81.07%{content: 'Graph'}
+    81.675%{content: 'Graphi|'}
+    82.28%{content: 'Graphic'}
+    82.885%{content: 'Graphic |'}
+    83.49%{content: 'Graphic D'}
+    84.095%{content: 'Graphic De|'}
+    84.7%{content: 'Graphic Des'}
+    85.305%{content: 'Graphic Desi|'}
+    85.91%{content: 'Graphic Desig'}
+    86.515%{content: 'Graphic Design|'}
+    87.12%{content: 'Graphic Designe'}
+    87.725%{content: 'Graphic Designer|'}
+    88.33%{content: 'Graphic Designer'}
+    88.935%{content: 'Graphic Designer|'}
+    89.54%{content: 'Graphic Designer'}
+    90.145%{content: 'Graphic Designer|'}
+    90.75%{content: 'Graphic Designer'}
+    91.355%{content: 'Graphic Designe|'}
+    91.96%{content: 'Graphic Design'}
+    92.565%{content: 'Graphic Desig|'}
+    93.17%{content: 'Graphic Desi'}
+    93.775%{content: 'Graphic Des|'}
+    94.38%{content: 'Graphic De'}
+    94.985%{content: 'Graphic D|'}
+    95.59%{content: 'Graphic '}
+    96.195%{content: 'Graphic|'}
+    96.8%{content: 'Graphi'}
+    97.405%{content: 'Graph|'}
+    98.01%{content: 'Grap'}
+    98.615%{content: 'Gra|'}
+    99.22%{content: 'Gr'}
+    99.825%{content: 'G|'}
+    100%{content: ''}
+}
+/* End header  */
+
+/* Start abute  */
+.progress {
+    height: 10px;
+}
+.progress-ba-color {
+    background-color: var(--progress-ba-color);
+}
+.prog-bar-1 {
+width: 85%;
+}
+.prog-bar-2 {
+width: 75%;
+}
+.prog-bar-3 {
+width: 50%;
+}
+.prog-bar-4 {
+width: 90%;
+}
+
+.person-row {
+    padding-bottom: 150px !important;
+}
+.txt {
+    color: var(--text-color);
+}
+.define div h2::before,
+.define h3::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 6rem;
+    height: 3px;
+    background-color: var(--bs-primary);
+
+}
+/* End abute  */
+
+/* Start services */
+.subheading {
+    font-size: 3rem;
+}
+.subparagraph::before{
+    content: '';
+    position: absolute;
+    left: calc(50% - 1.5rem);
+    bottom: 0;
+    width: 3rem;
+    height: 4px;
+    background-color: var(--bs-primary);
+}
+.span-ico {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 8px solid var(--bs-primary);
+    display: block;
+    margin: auto;
+    line-height: 110px;
+}
+.ico {
+    font-size: 3rem;
+}
+.card-servise:hover .span-ico{
+    border: 8px solid var(--hover-color);
+    background-color: var(--bs-primary);
+}
+.card-servise:hover .ico {
+    color: var(--bs-white);
+}
+/* End services */
+/* Start counter */
+.icon {
+    font-size: 3rem;
+}
+.span-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 8px solid var(--hover-color);
+    display: block;
+    margin: auto;
+    line-height: 110px;
+}
+.row-counter {
+    padding-block: 8rem;
+}
+.counter {
+    background-image: url(../images/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-primary);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.row-counter {
+    position: relative;
+}
+
+@media  (max-width: 1024px){
+    .counter {
+        background-attachment: scroll;
+    }
+}
+.card-pointer {
+    cursor: pointer;
+}
+.portfo-card div:first-child img {
+    transition: all 0.5s ease-in;
+}
+.portfo-card:hover img {
+    transform: scale(1.2);
+}
+/* End counter */
+
+/* Start slide */
+.slide-main {
+    padding-block:3rem;
+    background-image: url(../images/overlay-bg.jpg );
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.slid-img {
+    width: 150px;
+    height: 150px;
+}
+.overlay-slide {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-primary);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* End slide */
+/* Start blog */
+.card-footer img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+.card-footer p {
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.badge-blog {
+    margin-left: 50%;
+}
+.anchor-hover:hover {
+    color: var(--bs-primary) !important;
+} 
+.blog-img-hover {
+    cursor: pointer;
+}
+/* End blog */
+/* Start form  */
+.form-sec {
+    padding-block:3rem;
+    background-image: url(../images/overlay-bg.jpg );
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-sec .overlay-footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-primary);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+textarea {
+    height: 140px;
+}
+/* End form  */
